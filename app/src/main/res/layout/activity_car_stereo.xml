@@ -207,7 +207,8 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButtonCDDeck" />
+                android:id="@+id/imageButtonCDDeck"
+                android:src="@mipmap/Drive" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -215,35 +216,51 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageButtonPlay" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButtonPause" />
+                    android:id="@+id/imageButtonPlay"
+                    android:src="@mipmap/Play" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButtonStop" />
+                    android:id="@+id/imageButtonPause"
+                    android:src="@mipmap/Pause" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButtonEject" />
+                    android:id="@+id/imageButtonStop"
+                    android:src="@mipmap/Stop" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButtonForward" />
+                    android:id="@+id/imageButtonEject"
+                    android:src="@mipmap/Eject" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButtonRepeat" />
+                    android:id="@+id/imageButtonForward"
+                    android:src="@mipmap/ic_launcher" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButtonRepeat"
+                    android:src="@mipmap/Rewind" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>
 
