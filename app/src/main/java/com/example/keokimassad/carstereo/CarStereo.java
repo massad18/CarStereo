@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class CarStereo extends AppCompatActivity {
@@ -13,6 +14,7 @@ public class CarStereo extends AppCompatActivity {
     public static Button preset1,preset2,preset3,preset4,preset5,preset6,volUp,volDown,tuneUp,tuneDown;
     public static ImageButton cdDrive,play,pause,stop,eject,forward,rewind;
     public static ToggleButton aMfM,powerButton;
+    public static TextView stationDisplay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +38,7 @@ public class CarStereo extends AppCompatActivity {
         eject = (ImageButton) this.findViewById(R.id.imageButtonEject);
         forward = (ImageButton) this.findViewById(R.id.imageButtonForward);
         rewind = (ImageButton) this.findViewById(R.id.imageButtonRepeat);
+        stationDisplay = (TextView) this.findViewById(R.id.stationDisplay);
         PowerView pv = new PowerView(this.getApplicationContext());
         powerButton.setOnClickListener(pv);
         preset1.setOnClickListener(pv);
@@ -75,5 +78,11 @@ public class CarStereo extends AppCompatActivity {
         CarStereo.forward.setEnabled(false);
         CarStereo.rewind.setEnabled(false);
 
+        preset1.setOnLongClickListener(pv);
+        preset2.setOnLongClickListener(pv);
+        preset3.setOnLongClickListener(pv);
+        preset4.setOnLongClickListener(pv);
+        preset5.setOnLongClickListener(pv);
+        preset6.setOnLongClickListener(pv);
     }
 }
