@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New ToggleButton"
-                android:id="@+id/toggleButton"
+                android:id="@+id/buttonAmFm"
                 android:textOff="AM"
                 android:textOn="FM" />
 
@@ -90,7 +90,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1"
-                android:id="@+id/button1" />
+                android:id="@+id/button1"
+                android:onClick="button1Clicked"/>
 
             <Space
                 android:layout_width="wrap_content"
@@ -208,7 +209,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButtonCDDeck"
-                android:src="@mipmap/Drive" />
+                android:src="@mipmap/drive" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -225,25 +226,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonPlay"
-                    android:src="@mipmap/Play" />
+                    android:src="@mipmap/play" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonPause"
-                    android:src="@mipmap/Pause" />
+                    android:src="@mipmap/pause" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonStop"
-                    android:src="@mipmap/Stop" />
+                    android:src="@mipmap/stop" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonEject"
-                    android:src="@mipmap/Eject" />
+                    android:src="@mipmap/eject" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -255,7 +256,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageButtonRepeat"
-                    android:src="@mipmap/Rewind" />
+                    android:src="@mipmap/rewind" />
 
                 <Space
                     android:layout_width="match_parent"
